@@ -30,11 +30,4 @@ export const store = createStore({
 	},
 });
 
-export const useUserAgeX = () =>
-	useSelector(store, (state) => state.context.age);
-export const useUserNameX = () =>
-	useSelector(store, (state) => state.context.name);
-export const useUserSkillsX = () =>
-	useSelector(store, (state) => state.context.skills);
-
 export const useUserX = () => useSelector(store, (state) => state.context);
